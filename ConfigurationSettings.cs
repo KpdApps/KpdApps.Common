@@ -1,6 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Configuration;
+using System.Globalization;
+using System.Linq;
+using System.Net;
 
 namespace KpdApps.Crm.Ms.Common
 {
@@ -32,6 +35,11 @@ namespace KpdApps.Crm.Ms.Common
 
 		private string _sqlConnectionString;
 		public string SqlConnectionString => _sqlConnectionString ?? (_sqlConnectionString = GetValue("CrmConnectionString"));
+
+		internal ConfigurationSettings()
+		{
+			_settings = new NameValueCollection();
+		}
 
 		internal ConfigurationSettings(NameValueCollection collection)
 		{
@@ -68,5 +76,29 @@ namespace KpdApps.Crm.Ms.Common
 			if (_settings != null)
 				_settings[key] = value;
 		}
+
+		public static ConfigurationSettings Current
+		{
+			get
+			{
+				lock (SyncObject)
+				{
+					switch (Instance.Count)
+					{
+						case 0:
+							return null;
+						case 1:
+							return Instance.First().Value;
+						default:
+							var msg = string.Format(CultureInfo.InvariantCulture, "Количество экземпляров настроек в словаре: {0}. Определение текущего не возможно.", Instance.Count);
+							throw new ConfigurationErrorsException(msg);
+					}
+				}
+			}
+		}
+
+		public bool UseDefaultCredentials => GetValue("UseDefaultCredentials") == "true" || string.IsNullOrEmpty(UserName);
+
+		public NetworkCredential Credential => new NetworkCredential(UserName, Password, Domain);
 	}
 }
