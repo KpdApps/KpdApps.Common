@@ -1,2 +1,2 @@
-# KpdApps.Crm.Ms.Common
+# KpdApps.MsCrm.Common
 Common usefull operations and extensions for MsCRM
