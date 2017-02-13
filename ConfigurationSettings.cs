@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Linq;
 using System.Net;
 
-namespace KpdApps.Crm.Ms.Common
+namespace KpdApps.MsCrm.Common
 {
 	public class ConfigurationSettings
 	{

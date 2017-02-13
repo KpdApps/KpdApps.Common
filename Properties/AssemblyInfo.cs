@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("KpdApps.Crm.Ms.Common")]
+[assembly: AssemblyTitle("KpdApps MsCrm Common Library")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("KpdApps.Crm.Ms.Common")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyProduct("KpdApps MsCrm Common Library")]
+[assembly: AssemblyCopyright("Dmitry Pelevin ©  2017")]
+[assembly: AssemblyTrademark("Dmitry Pelevin")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
