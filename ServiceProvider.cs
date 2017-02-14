@@ -4,7 +4,7 @@ using System.Collections.Specialized;
 using System.Configuration;
 using System.Net;
 
-namespace KpdApps.MsCrm.Common
+namespace KpdApps.Common
 {
 	public sealed class ServiceProvider : IServiceProvider
 	{

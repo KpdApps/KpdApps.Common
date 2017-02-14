@@ -7,8 +7,8 @@
     <ProjectGuid>{828DCAD3-FCDC-4D59-A0F9-C75AD0E77877}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>KpdApps.MsCrm.Common</RootNamespace>
-    <AssemblyName>KpdApps.MsCrm.Common</AssemblyName>
+    <RootNamespace>KpdApps.Common</RootNamespace>
+    <AssemblyName>KpdApps.Common</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

@@ -1,4 +1,4 @@
-﻿namespace KpdApps.MsCrm.Common
+﻿namespace KpdApps.Common
 {
 	public interface IExtendedService
 	{
