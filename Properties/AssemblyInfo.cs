@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("KpdApps MsCrm Common Library")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("KpdApps Common Library")]
+[assembly: AssemblyDescription("A useful and commonly used methods")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("KpdApps MsCrm Common Library")]
+[assembly: AssemblyCompany("KpdApps Ltd.")]
+[assembly: AssemblyProduct("KpdApps Common Library")]
 [assembly: AssemblyCopyright("Dmitry Pelevin ©  2017")]
 [assembly: AssemblyTrademark("Dmitry Pelevin")]
 [assembly: AssemblyCulture("")]
